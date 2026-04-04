@@ -64,6 +64,7 @@
             { "label": "JSON",       "type": "tool" },
             { "label": "Web App",    "type": "type" }
         ],
+        "github": "https://github.com/Mahaer/Portfolio",
         "longDesc": "This is the website that you are on right now and you are free to navigate around to check out the project that I have built over time, as well as my story. I decided to build this website so that I could have one centralized place to share all of my projects and the story behind them, rather then linking to them separately on different platforms. ",
         "techBreakdown": [
             {
