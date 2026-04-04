@@ -18,7 +18,7 @@ export default function App() {
       <header>
         <h1>{isPortfolioUnlocked
           ? <><span>Mahaer</span> Chugh</>
-          : <><span>Undeadtomato</span>.netlify.app</>
+          : <><span>Undeadtomato</span>.vercel.app</>
         }</h1>
         <div>
           <nav>
@@ -56,7 +56,7 @@ export default function App() {
       <footer>
         <h3>{isPortfolioUnlocked
           ? <><span>Mahaer</span> Chugh</>
-          : <><span>Undeadtomato</span>.netlify.app</>
+          : <><span>Undeadtomato</span>.vercel.app</>
         }</h3>       
         <span>built with React in 2026</span>
       </footer>
