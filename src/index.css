@@ -1,0 +1,60 @@
+:root {
+  /* backgrounds */
+  --bg: #080e1a;
+  --bg-2: #0d1525;
+  --bg-3: #111d30;
+  --bg-4: #172240;
+  --bg-hover: #1e2d4a;
+
+  /* accent — purple */
+  --purple: #818cf8;
+  --purple-2: #6366f1;
+  --purple-deep: #4f46e5;
+  --purple-glow: rgba(129, 140, 248, 0.15);
+  --purple-hover: rgba(129, 140, 248, 0.25);
+  --purple-border: rgba(129, 140, 248, 0.2);
+  --purple-border-focus: rgba(129, 140, 248, 0.35);
+
+  /* status */
+  --green: #4ade80;
+  --green-glow: rgba(74, 222, 128, 0.12);
+  --amber: #fbbf24;
+  --amber-glow: rgba(251, 191, 36, 0.12);
+  --blue: #60a5fa;
+  --blue-glow: rgba(96, 165, 250, 0.12);
+
+  /* text */
+  --text: #eef2ff;
+  --text-2: #94a3b8;
+  --text-3: #475569;
+  --text-muted: #3d526b;
+  --text-accent: #818cf8;
+
+  /* borders */
+  --border: rgba(255, 255, 255, 0.06);
+  --border-2: rgba(255, 255, 255, 0.10);
+
+  /* fonts */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: light only;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}

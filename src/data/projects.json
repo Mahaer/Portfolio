@@ -1,0 +1,279 @@
+[
+    {
+        "name": "Glyph",
+        "id": "glyph",
+        "description": "A Windows desktop utility that lets you launch apps, open websites, and trigger system actions using hand-drawn gestures",
+        "year": 2026,
+        "color": "#0078d4",
+        "featured": true,
+        "tags": [
+            { "label": "C++",        "type": "lang" },
+            { "label": "Electron",   "type": "tool" },
+            { "label": "TensorFlow", "type": "tool" },
+            { "label": "Keras",      "type": "tool" },
+            { "label": "TypeScript", "type": "lang" },
+            { "label": "CSS",        "type": "lang" },
+            { "label": "Python",     "type": "lang" },
+            { "label": "Desktop App","type": "type" },
+            { "label": "ONNX",       "type": "tool" },
+            { "label": "React",      "type": "type" },
+            { "label": "AI",         "type": "type" },
+            { "label": "Jupyter",    "type": "tool" }        
+        ],
+        "github": "https://github.com/Mahaer/glyph",
+        "longDesc": "Glyph started late at night on Reddit when I was watching random apps people had built. My tired mind began combining ideas until one stuck: a utility that lets you control your computer by drawing gestures on screen. I started building it in plain HTML and CSS inside Electron, which I quickly realized wasn't sustainable. So I rebuilt the UI in React and Redux, but struggled badly with syncing Redux state with Electron Store. A lot of bad architectural decisions further stalled development for a while. Then I found the Electron React Boilerplate from MIT and everything clicked. The project finally had a solid foundation and shipped as a fully working Windows app. For gesture recognition, I trained a neural network in Python using TensorFlow and Keras on the EMNIST Balanced Dataset, then exported it as an ONNX file to run directly inside the Electron Application. For the actual app launching and grid execution, I took a beginner C++ course, learned the Windows API, and wrote a native module to handle system-level actions. Glyph probably wasn't the most profitable idea, but it taught me more about real software development than anything I'd built before.",
+        "recordings": [
+            {
+                "caption": "Setting up all the gesture mapping in the settings panel",
+                "videoKey": "Glyph1"
+            },
+            {
+                "caption": "Using the draw panel to open the previously configured apps with hand-drawn gestures",
+                "videoKey": "Glyph2"
+            }
+        ],
+        "techBreakdown": [
+            {
+                "tech": "Electron React Boilerplate",
+                "reason": "This boilerplate developed by MIT provided a pivotal foundation for building the Electron app with React and TypeScript, handling complex development tools and optimizations out of the box"
+            },
+            {
+                "tech": "Python with TensorFlow & Keras in Jupyter Notebook",
+                "reason": "Trained a neural network on the EMNIST Balanced Dataset to recognize hand-drawn gestures, getting a solid 91% accuracy"
+            },
+            {
+                "tech": "ONNX",
+                "reason": "The trained neural network was then exported as an .onnx file, allowing it to run directly in the electron process"
+            },
+            {
+                "tech": "C++ with Windows API",
+                "reason": "To execute system-level actions and launch apps, I wrote a C++ program to execute the configured apps in the appropriate grid position, which made the project come to life"
+            }
+        ]
+    },
+    {
+        "name": "Personal Portfolio",
+        "id": "personalportfolio",
+        "description": "This is the website you're on right now! A website to showcase my projects and share my story",
+        "year": 2026,
+        "featured": false,
+        "tags": [
+            { "label": "JavaScript", "type": "lang" },
+            { "label": "React",      "type": "tool" },
+            { "label": "CSS",        "type": "lang" },
+            { "label": "JSON",       "type": "tool" },
+            { "label": "Web App",    "type": "type" }
+        ],
+        "longDesc": "This is the website that you are on right now and you are free to navigate around to check out the project that I have built over time, as well as my story. I decided to build this website so that I could have one centralized place to share all of my projects and the story behind them, rather then linking to them separately on different platforms. ",
+        "techBreakdown": [
+            {
+                "tech": "React",
+                "reason": "Provided a way to easily create reusable components and manage the state of the website, making it easier to build and maintain"
+            },
+            {
+                "tech": "React Router",
+                "reason": "Used for handling navigation and routing within the website, allowing for a seamless single-page application experience"
+            },
+            {
+                "tech": "CSS Modules",
+                "reason": "Added scope to the CSS, preventing any potential naming conflicts and making it easier to maintain the styles of the website"
+            },
+            {
+                "tech": "JSON",
+                "reason": "Powers the state and data of the website, allowing me to easily add new projects and update existing ones easily"
+            }
+        ]
+    },
+    {
+        "name": "AiCaptionator",
+        "id": "aicaptionator",
+        "description": "A website that lets you transcribe audio, edit captions, and export captioned videos",
+        "year": 2025,
+        "color": "#9000ff",
+        "featured": false,
+        "tags": [
+            { "label": "JavaScript", "type": "lang" },
+            { "label": "React",      "type": "tool" },
+            { "label": "Node.js",    "type": "tool" },
+            { "label": "Whisper AI", "type": "tool" },
+            { "label": "MoviePy",    "type": "tool" },
+            { "label": "Python",     "type": "lang" },
+            { "label": "Web App",    "type": "type" },
+            { "label": "Redux",      "type": "tool" },
+            { "label": "AI",         "type": "type" }
+        ],
+        "github": "https://github.com/Mahaer/AiCaptionator",
+        "longDesc": "AiCaptionator came from a real struggle I faced. I used to run a YouTube channel, and adding captions to Shorts was the most tedious part of the whole process. So to solve this, I decided to just build the tool myself. I set up a React and Redux foundation, built the main page, then integrated Whisper AI to transcribe an uploaded audio file and split the output into individual words. From there I built a custom interactive text editor where each word was its own editable bubble. This provided a new style of editing text that was unlike anything I'd worked with before. Once editing was done, MoviePy handled the final video generation. The hardest problem was getting the canvas preview on the main page to accurately match the actual video output. I solved it by collecting manual data points and creating a set of scaled linear functions to calculate the offset between the preview and the real render. This project was a meaningful step up from anything I'd built before and got me back into Python in a serious way.",
+        "recordings": [
+            {
+                "caption": "A full workflow of uploading the audio, editing the raw transcript, and then exporting the final video",
+                "videoKey": "AiCaptionator"
+            }
+        ],
+        "techBreakdown": [
+            {
+                "tech": "React & Redux",
+                "reason": "Allowed me to create an interactive and dynamic user interface with ease"
+            },
+            {
+                "tech": "Whisper AI",
+                "reason": "Provided powerful transcription cababilities that transcribed the user's audio file into text"
+            },
+            {
+                "tech": "MoviePy",
+                "reason": "Converted the edited text and style settings into a complete green screen video that could be exported and used in a video editor"
+            }
+        ]
+    },
+    {
+        "name": "Jammming With Spotify",
+        "id": "jammmingwithspotify",
+        "description": "A web app that allows users to search for songs and create playlists with the Spotify API",
+        "year": 2024,
+        "color": "#90ee90",
+        "featured": false,
+        "tags": [
+            { "label": "CSS",        "type": "lang" },
+            { "label": "JavaScript", "type": "lang" },
+            { "label": "React",      "type": "tool" },
+            { "label": "Web App",    "type": "type" }
+        ],
+        "longDesc": "This project was one of the portfolio projects that I built for my online full-stack web development course. The project wanted me to use Spotify API and use my newly acquired React knowledge to build a fully-functioning web app that allows users to serach for songs and create playlists directly into their Spotify account. When I came back to this project to add it to my portfolio, I discovered that Spotify now requires a paid subscription to use their API, which is why I am unable to provide a demo video or the source code. Nonetheless, I decided to include it anyways because I remember being incredibly proud of it when it was done. It was the first time I built something that felt polished and complete, and it laid the foundation for much more complex projects that followed.",
+        "pictures": [
+            {
+                "pictureKey": "Jammming",
+                "caption": "The main page of the app, where users can search for songs, view search results, and add them to their playlist"
+            }
+        ],
+        "techBreakdown": [
+            {
+                "tech": "React",
+                "reason": "React's component-based architecture and state management made it easy to build a dynamic and responsive user interface"
+            },
+            {
+                "tech": "CSS Modules",
+                "reason": "Added scope to the CSS, preventing any potential naming conflicts"
+            },
+            {
+                "tech": "Spotify API",
+                "reason": "Provided a seamless method to integrate directly with Spotify's music database and user accounts"
+            }
+        ]
+    },
+    {
+        "name": "Browser Clone",
+        "id": "browserclone",
+        "description": "A basic web browser clone built with extra features",
+        "year": 2023,
+        "color": "#fc592a",
+        "featured": false,
+        "tags": [
+            { "label": "JavaScript", "type": "lang" },
+            { "label": "HTML",       "type": "lang" },
+            { "label": "CSS",        "type": "lang" },
+            { "label": "Web App",    "type": "type" }
+        ],
+        "github": "https://github.com/Mahaer/BrowserClone",
+        "longDesc": "This project began because I was annoyed that there was no centralized keyboard or calculator integrated into my browser to write special characters or do simple calculations, so I decided to create my own. Now, I was new to HTML and CSS at the time, so there are a lot of issues that I see with it in hindsight, such as the process of adding new bookmarks being very time consuming. However, this was the first project I built using my newly acquired web development skills without a guiding tutorial, so I learned a lot about how to structure and design a website, as well as how to apply my programming intuition gained from Scratch to real-world applications using JavaScript. This project was a huge step up from my simple games. It introduced me to a whole new world of what I could build with code and motivated me to keep going. However, I also learned the limitations and struggles with using pure HTML and JavaScript, which pushed me to learn more complicated frameworks like React down the line.",
+        "recordings": [
+            {
+                "caption": "A complete walkthrough of the browser's features, such as the search bar, bookmarks, keyboard, and calculator",
+                "videoKey": "BrowserClone"
+            }
+        ],
+        "techBreakdown": [
+            {
+                "tech": "HTML & CSS",
+                "reason": "Provided a way to easily structure and style the website, making it look somewhat similar to a real browser"
+            },
+            {
+                "tech": "JavaScript",
+                "reason": "Allowed me to handle the interactivity of the browser, such as setting up the search bar, or integrating calculator and keyboard"
+            },
+            {
+                "tech": "Pexels",
+                "reason": "Used to source all the backgroung images for the browser copyright-free"
+            }
+        ]
+    },
+    {
+        "name": "3D Platformer",
+        "id": "3dplatformer",
+        "description": "A 3D platformer game built on Scratch using a custom-built 3D engine",
+        "year": 2020,
+        "featured": false,
+        "color": "#ff36ff",
+        "tags": [
+            { "label": "Scratch",    "type": "tool" },
+            { "label": "Game",       "type": "type" }
+        ],
+        "longDesc": "The inspiration for this project came when I was just 9 years old from my desire to make some sort of level game with physics and a YouTube video I watched about the math behind 3D rendering. Although I wasn't too good at programming at the time, I began by correctly creating abstracted functions to render a platform based on one coordinate point, then built a level system with it. I improved the game further by adding a player that can jump betwenn platforms. Then, I added red lava and a health system that depleted when the player either went in the lava or fell into the void. I also added portals to make a seamless transition between levels. Finally, I added basic code for a death screen and first-aid kits which would regenerate the player's health. However, I eventually lost interest in the project and those parts remain incomplete. Looking back, this was the last major project I built on Scratch before I moved to text-based coding, and it taught me the importance of math in programming and how to break down complex concepts into simpler pieces.",
+        "scratchId": "729956522",
+        "techBreakdown": [
+            {
+                "tech": "Scratch",
+                "reason": "Scratch's block-based coding allowed me to build this project at such a young age without needing to worry about syntax, and boilerplate, allowing me to focus on the math and style of the game"
+            },
+            {
+                "tech": "3D Engine",
+                "reason": "I developed a custom 3D engine using the pen tool and coordinate geometry. Although the implementation did not use trigonometry for rotation, it adequately translated 3D coordinates into 2D space to create the illusion of depth, which was good enough to render the 3D platforms"
+            }
+        ]
+    },
+    {
+        "name": "Paper Minecraft",
+        "id": "paperminecraft",
+        "description": "A clone of 2D Minecraft built on Scratch, with procedural world generation, a cursor, and an inventory system",
+        "year": 2019,
+        "featured": false,
+        "color": "#00bfff",
+        "tags": [
+            { "label": "Scratch",    "type": "tool" },
+            { "label": "Game",       "type": "type" }
+        ],
+        "longDesc": "Paper Minecraft was the project where I began to think like a real programmer. Up until this point, I only built simple games, interactions, and code, in an attempt to grasp the fundamental concepts of programming. However, replicating Minecraft to the best of my ability required me to start applying that knowledge towards real problems, such as procedural terrain generation. I relied heavily on lists and custom functions for this project, shifting my workflow from simple variable modifications into more complex data structures. Although it was never finished, it represents the time that programming became more of a tool rather than a fun gimmick.",
+        "scratchId": "394711106",
+        "techBreakdown": [
+            {
+                "tech": "Scratch",
+                "reason": "Scratch's block-based coding allowed me to build this project at such a young age without needing to worry about syntax, and boilerplate, allowing me to focus on the core functionality and style of the game"
+            },
+            {
+                "tech": "Lists",
+                "reason": "This project taught me the hidden value of using lists as a method of managing data. I used lists to store the block states of each block in a world chunk, which I would use to procedurally generate more chunks from and add trees to"
+            },
+            {
+                "tech": "Functions",
+                "reason": "Creating functions made it much easier for me to abstract away complex code into one block functions which I was able to reuse in other parts of the program to make procedural world generation a lot easier to implement"
+            }
+        ]
+    },
+    {
+        "name": "Cookie Clicker",
+        "id": "cookieclicker",
+        "description": "The first project that I ever completed on Scratch",
+        "year": 2019,
+        "featured": false,
+        "color": "#c722c9",
+        "tags": [
+            { "label": "Scratch",    "type": "tool" },
+            { "label": "Game",       "type": "type" }
+        ],
+        "longDesc": "This was the first project that I ever completed on Scratch. I became aware of Scratch from a random day in my elementary schhol's computer lab class. When I saw the orange cat logo on my computer's desktop, I opened it to see the sprite drawing page. This made me believe that Scratch was some cool app for drawing. So, I went home and signed up for Scratch before ultimately realizing that it was a website for coding. Now at the time, I briefly knew what coding was, but I didn't know anything about it. So, because I loved playing Cookie Clicker with my friends in the computer lab during school, I decided to make my own version in Scratch. After a while, I became acquainted with the basic blocks and learned how to add buildings and counters to the project. Although it ended up being a simple and ugly project, it served as the perfect start for me to enter the world of programming at such a young age.",
+        "scratchId": "322809604",
+        "techBreakdown": [
+            {
+                "tech": "Scratch",
+                "reason": "Scratch's block-based coding allowed me to build this project at such a young age without needing to worry about syntax, and boilerplate, allowing me to focus on the core functionality and style of the game"
+            },
+            {
+                "tech": "Variables",
+                "reason": "Helped me keep track of the nubmer of cookies, building, and the cookies per second in an easy way, which taught me the fundamentals of how to store and manage data in programs"
+            },
+            {
+                "tech": "Loops",
+                "reason": "Allowed me to run the same code every second to increment the user's cookies based on their cookies per second, which taught me how to manage repetitive tasks without repeating the code over and over"
+            }
+        ]
+    }
+]

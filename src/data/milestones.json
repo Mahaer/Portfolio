@@ -1,0 +1,50 @@
+[
+  {
+    "age": 9,
+    "year": 2019,
+    "title": "Began Learning How to Code",
+    "desc": "Learned basic programming concepts using Scratch"
+  },
+  {
+    "age": 9,
+    "year": 2020,
+    "title": "Learned 3D Graphics & Game Development",
+    "desc": "Built a 3D platformer in Scratch by understanding the math behind 3D rendering"
+  },
+  {
+    "age": 10,
+    "year": 2020,
+    "title": "Started Text-Based Coding with Python",
+    "desc": "Learned Python syntax and built simple projects using fundamental concepts"
+  },
+  {
+    "age": 12,
+    "year": 2022,
+    "title": "Learned Basic Frontend Development",
+    "desc": "Used HTML and CSS and started building real websites from scratch"
+  },
+  {
+    "age": 13,
+    "year": 2022,
+    "title": "Refined Web Development Skills With JavaScript",
+    "desc": "Added JS to the frontend, then dove into Node.js and Express on the backend."
+  },
+  {
+    "age": 13,
+    "year": 2023,
+    "title": "Built an accessibility tool for a school research project",
+    "desc": "Applied my programming knowledge into a real-world project"
+  },
+  {
+    "age": 14,
+    "year": 2024,
+    "title": "React, Redux & Version Control",
+    "desc": "Learned modern frontend development with React, Redux, Git, and GitHub."
+  },
+  {
+    "age": 15,
+    "year": 2026,
+    "title": "Built a Complete Desktop Application",
+    "desc": "Built and shipped a full desktop application while adding C++, Electron, TensorFlow, Keras, TypeScript, and Python to my skillset"
+  }
+]

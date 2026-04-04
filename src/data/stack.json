@@ -1,0 +1,31 @@
+{
+  "languages": [
+    { "name": "HTML",       "color": "#E44D26" },
+    { "name": "CSS",        "color": "#1572B6" },
+    { "name": "JavaScript", "color": "#F0DB4F" },
+    { "name": "TypeScript", "color": "#007ACC" },
+    { "name": "Python",     "color": "#3776AB" },
+    { "name": "C++",        "color": "#659AD3" }
+  ],
+  "frameworks": [
+    { "name": "React",      "color": "#61DAFB" },
+    { "name": "Redux",      "color": "#764ABC" },
+    { "name": "Electron",   "color": "#9FEAF9" }
+  ],
+  "machine learning and ai": [
+    { "name": "TensorFlow", "color": "#FF6F00" },
+    { "name": "Keras",      "color": "#D00000" },
+    { "name": "ONNX",       "color": "#818cf8" },
+    { "name": "Whisper AI", "color": "#10a37f" },
+    { "name": "Jupyter",    "color": "#F37626" }
+  ],
+  "tools": [
+    { "name": "Node.js",    "color": "#83CD29" },
+    { "name": "Vite",       "color": "#646CFF" },
+    { "name": "Git",        "color": "#F34F29" }
+  ],
+  "other": [
+    { "name": "GitHub",     "color": "#ffffff" },
+    { "name": "Scratch",    "color": "#FC8003" }
+  ]
+}
