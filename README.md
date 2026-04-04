@@ -1,7 +1,7 @@
 # Portfolio
 
 My personal portfolio website built with React and Vite.
-Live site: https://undeadtomato.netlify.app
+Live site: https://undeadtomato.vercel.app
 
 ## Setup
 ```bash
