@@ -1,11 +1,90 @@
 [
     {
+        "name": "Todo With Auth",
+        "id": "todowithauth",
+        "description": "A simple todo app that securely stores user data and allows users to create and manage their tasks",
+        "year": 2026,
+        "color": "#0082e6",
+        "featured": true,
+        "tags": [
+            { "label": "TypeScript", "type": "lang" },
+            { "label": "Next.js 15", "type": "tool" }, 
+            { "label": "React", "type": "tool" },
+            { "label": "Prisma", "type": "tool" },
+            { "label": "PostgreSQL", "type": "tool" },
+            { "label": "Auth.js", "type": "tool" },
+            { "label": "Tailwind CSS", "type": "lang" },
+            { "label": "Neon", "type": "tool" },
+            { "label": "Web App", "type": "type" }
+        ],
+        "github": "https://github.com/Mahaer/todowithauth",
+        "longDesc": "This project started as a way for me to learn Next.js and how to successfully authenticate users and store their accounts on a custom database. However, along the way I picked up several new skills as well. For example, I learned about different color formats like oklch and hsl as more mathematically precise formats to represent color data. I also learned the foundations of Tailwind CSS, which made it incredibly easy to style and design the app. Next, I learned about OAuth and Magic Links, which allowed me to connect user accounts based on their email and authenticate them securely and easily. For the database sector, I used Neon and Prisma to set up a PostgreSQL database and connect it to the app. Overall, this project taught me how to code the backend of web applications and makes me confident that I am capable of developing production-ready full-stack websites. ",
+        "recordings": [
+            {
+                "caption": "Demonstrating multiple forms of authentication as well as the connected task storage from the database",
+                "videoKey": "TodoWithAuth"
+            }
+        ],
+        "techBreakdown": [
+            {
+                "tech": "Next.js",
+                "reason": "Provided a seamless way to connect the frontend and backend of the application, as well as handle routing and server-side rendering, which made the development process much smoother"
+            },
+            {
+                "tech": "Auth.js",
+                "reason": "I used auth.js to centralize authentication logic and provide an easy way to implement both Magic Link and OAuth into the site"
+            },
+            {
+                "tech": "Prisma ORM with Neon PostgreSQL",
+                "reason": "I developed a relational database to handle user data and their todo tasks. Prisma ensured type-safety while Neon provided a serverless PostgreSQL database that was easy to integrate into the app"
+            },
+            {
+                "tech": "Tailwind CSS",
+                "reason": "I implemented oklch color spaces and Tailwind's utility classes to create a visually appealing web-application"
+            }
+        ]
+    },
+    {
+        "name": "Personal Portfolio",
+        "id": "personalportfolio",
+        "description": "This is the website you're on right now! A website to showcase my projects and share my story",
+        "year": 2026,
+        "featured": false,
+        "tags": [
+            { "label": "JavaScript", "type": "lang" },
+            { "label": "React",      "type": "tool" },
+            { "label": "CSS",        "type": "lang" },
+            { "label": "JSON",       "type": "tool" },
+            { "label": "Web App",    "type": "type" }
+        ],
+        "github": "https://github.com/Mahaer/Portfolio",
+        "longDesc": "This is the website that you are on right now and you are free to navigate around to check out the project that I have built over time, as well as my story. I decided to build this website so that I could have one centralized place to share all of my projects and the story behind them, rather then linking to them separately on different platforms. ",
+        "techBreakdown": [
+            {
+                "tech": "React",
+                "reason": "Provided a way to easily create reusable components and manage the state of the website, making it easier to build and maintain"
+            },
+            {
+                "tech": "React Router",
+                "reason": "Used for handling navigation and routing within the website, allowing for a seamless single-page application experience"
+            },
+            {
+                "tech": "CSS Modules",
+                "reason": "Added scope to the CSS, preventing any potential naming conflicts and making it easier to maintain the styles of the website"
+            },
+            {
+                "tech": "JSON",
+                "reason": "Powers the state and data of the website, allowing me to easily add new projects and update existing ones easily"
+            }
+        ]
+    },
+    {
         "name": "Glyph",
         "id": "glyph",
         "description": "A Windows desktop utility that lets you launch apps, open websites, and trigger system actions using hand-drawn gestures",
         "year": 2026,
         "color": "#0078d4",
-        "featured": true,
+        "featured": false,
         "tags": [
             { "label": "C++",        "type": "lang" },
             { "label": "Electron",   "type": "tool" },
@@ -48,40 +127,6 @@
             {
                 "tech": "C++ with Windows API",
                 "reason": "To execute system-level actions and launch apps, I wrote a C++ program to execute the configured apps in the appropriate grid position, which made the project come to life"
-            }
-        ]
-    },
-    {
-        "name": "Personal Portfolio",
-        "id": "personalportfolio",
-        "description": "This is the website you're on right now! A website to showcase my projects and share my story",
-        "year": 2026,
-        "featured": false,
-        "tags": [
-            { "label": "JavaScript", "type": "lang" },
-            { "label": "React",      "type": "tool" },
-            { "label": "CSS",        "type": "lang" },
-            { "label": "JSON",       "type": "tool" },
-            { "label": "Web App",    "type": "type" }
-        ],
-        "github": "https://github.com/Mahaer/Portfolio",
-        "longDesc": "This is the website that you are on right now and you are free to navigate around to check out the project that I have built over time, as well as my story. I decided to build this website so that I could have one centralized place to share all of my projects and the story behind them, rather then linking to them separately on different platforms. ",
-        "techBreakdown": [
-            {
-                "tech": "React",
-                "reason": "Provided a way to easily create reusable components and manage the state of the website, making it easier to build and maintain"
-            },
-            {
-                "tech": "React Router",
-                "reason": "Used for handling navigation and routing within the website, allowing for a seamless single-page application experience"
-            },
-            {
-                "tech": "CSS Modules",
-                "reason": "Added scope to the CSS, preventing any potential naming conflicts and making it easier to maintain the styles of the website"
-            },
-            {
-                "tech": "JSON",
-                "reason": "Powers the state and data of the website, allowing me to easily add new projects and update existing ones easily"
             }
         ]
     },

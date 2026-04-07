@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom"
 import { useVisibility } from "../VisibilityContext/VisibilityContext"
 import projects from "../../data/projects.json"
 import styles from "./ProjectPage.module.css"
+import TodoWithAuth from "../../assets/demos/public/TodoWithAuth.mp4"
+import TodoWithAuthHidden from "../../assets/demos/hidden/TodoWithAuth.mp4"
 import Glyph1Public from "../../assets/demos/public/Glyph_1.mp4"
 import Glyph2Public from "../../assets/demos/public/Glyph_2.mp4"
 import Glyph1Hidden from "../../assets/demos/hidden/Glyph_1.mp4"
@@ -19,6 +21,7 @@ export default function ProjectPage() {
     const project = projects.find(p => p.id === id)
 
     const videoMap = { 
+        TodoWithAuth: isPortfolioUnlocked ? TodoWithAuthHidden : TodoWithAuth,
         Glyph1: isPortfolioUnlocked ? Glyph1Hidden : Glyph1Public,
         Glyph2: isPortfolioUnlocked ? Glyph2Hidden : Glyph2Public,
         AiCaptionator: isPortfolioUnlocked ? AiCaptionatorHidden : AiCaptionatorPublic,

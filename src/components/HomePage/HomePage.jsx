@@ -1,9 +1,9 @@
 import styles from './HomePage.module.css'
 import {
-  SiCss, SiElectron, SiGit, SiGithub, SiHtml5,
-  SiJavascript, SiKeras, SiNodedotjs, SiOpenai,
-  SiOnnx, SiPython, SiReact, SiRedux, SiJupyter,
-  SiTensorflow, SiTypescript, SiVite, SiScratch
+  SiCss, SiElectron, SiGit, SiGithub, SiHtml5, SiPostgresql, SiPrisma,
+  SiJavascript, SiKeras, SiNextdotjs, SiNodedotjs, SiOpenai, 
+  SiOnnx, SiPython, SiReact, SiRedux, SiJupyter, SiTailwindcss,
+  SiTensorflow, SiTypescript, SiVite, SiScratch, SiVercel,
 } from 'react-icons/si'
 import { TbBrandCpp } from 'react-icons/tb'
 import Projects from '../Projects/Projects'
@@ -23,6 +23,8 @@ export default function HomePage() {
     'C++':        <TbBrandCpp />,
     'React':      <SiReact />,
     'Redux':      <SiRedux />,
+    'Tailwind CSS':<SiTailwindcss />,
+    'Next.js':    <SiNextdotjs />,
     'Electron':   <SiElectron />,
     'TensorFlow': <SiTensorflow />,
     'Keras':      <SiKeras />,
@@ -34,6 +36,9 @@ export default function HomePage() {
     'Whisper AI': <SiOpenai />,
     'GitHub':     <SiGithub />,
     'Scratch':    <SiScratch />,
+    'Vercel':     <SiVercel />,
+    'PostgreSQL': <SiPostgresql />,
+    'Prisma':     <SiPrisma />,
   }
 
   return (
