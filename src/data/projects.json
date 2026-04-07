@@ -8,7 +8,7 @@
         "featured": true,
         "tags": [
             { "label": "TypeScript", "type": "lang" },
-            { "label": "Next.js 15", "type": "tool" }, 
+            { "label": "Next.js", "type": "tool" }, 
             { "label": "React", "type": "tool" },
             { "label": "Prisma", "type": "tool" },
             { "label": "PostgreSQL", "type": "tool" },
